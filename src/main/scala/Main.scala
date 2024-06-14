@@ -12,14 +12,14 @@ object Main {
     /**
      * Returns the position in the alphabet for character c. For example, a = 1 and z = 26. Characters outside a-z
      * will return nonsensical values.
-     * @param c
+     * @param c The character
      * @return
      */
     def letterValue(c: Char): Int = c.toLower.toInt - 96
 
     /**
      * Returns the sum of the letter values in word.
-     * @param word
+     * @param word The word
      * @return
      */
     def wordValue(word: String): Int = sum(word.toSet, letterValue _)
